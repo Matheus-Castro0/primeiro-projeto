@@ -1,0 +1,10 @@
+*{
+    color:#8400ff;
+}
+
+:host {
+    border: 2px solid #8400ff;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+}   

@@ -1,0 +1,27 @@
+<h1>Meu primeiro Hello World em Angular!</h1>
+
+<p>Esse é meu primeiro template</p>
+
+<app-filho-a [texto]="textoVaiProFilho" (textoPreenchido)="textoVeioDoFilho = $event"></app-filho-a>
+
+<app-filho-b></app-filho-b>
+
+<a href="https://github.com/Matheus-Castro0">Meu github</a>
+
+<p>
+    <label for="caixaPai">Digite o texto que vai pro componente filho:</label>
+    <input type="text" id="caixaPai" #caixaPai>
+    <button (click)="textoVaiProFilho = caixaPai.value" id="botao" >Enviar pro filho</button>
+</p>
+
+<p *ngIf="textoVeioDoFilho">
+    Esse texto veio do filho: {{textoVeioDoFilho}};
+</p>
+
+<p><a href="/">Teste 2</a></p>
+
+<p><a routerLink="filho-a">Filho A</a></p>
+
+<p><a routerLink="filho-b">Filho B</a></p>
+
+<router-outlet/>
